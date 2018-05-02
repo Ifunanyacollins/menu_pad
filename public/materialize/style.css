@@ -1,0 +1,76 @@
+body {font-family: 'Rubik', sans-serif !important;height:100vh;}
+
+/* THIS IS STYLE FOR THE LANDING PAGE */
+
+    .block-inline{
+    display:inline-block;
+    margin-right:4.1rem;
+}
+
+.top{
+    margin-top:20rem;
+}
+
+.btn-core{
+    padding-left:10rem;
+}
+
+.fadeout{
+	display: none;
+}
+
+
+/* END OF STYLE FOR THE LANDING PAGE */
+
+
+/* START FOR THE HOME PAGE */
+
+.brand-logo{
+	margin-left:2.0rem;
+}
+
+.bg-color{
+	background-color:#232F3E;
+}
+.orange-btn{
+	background-color:#FFA30F;
+}
+
+.slider .indicators {
+    position: relative;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    margin: 0;
+    z-index: 999;
+}
+/* END FOR THE HOME PAGE */
+
+@media only screen and (max-width:600px) {
+
+ /* THIS IS STYLE FOR THE LANDING PAGE */
+
+.top{
+    margin-top:3rem;
+}
+
+.block-inline{
+    display:inline-block;
+    margin-right:1.1rem;
+}
+
+.btn-core{
+    padding-left:8rem !important;
+}
+
+.fadeout{
+	display: none;
+}
+
+/* END OF STYLE FOR THE LANDING PAGE */
+
+.brand-logo img{
+	width:6rem;
+}
+}
