@@ -25,6 +25,15 @@ body {font-family: 'Rubik', sans-serif !important;height:100vh;}
 
 /* START FOR THE HOME PAGE */
 
+
+
+
+nav {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14) !important;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.14) !important;
+}
+
+
 .brand-logo{
 	margin-left:2.0rem;
 }
@@ -36,14 +45,23 @@ body {font-family: 'Rubik', sans-serif !important;height:100vh;}
 	background-color:#FFA30F;
 }
 
-.slider .indicators {
-    position: relative;
-    text-align: center;
-    left: 0;
-    right: 0;
-    bottom: 35px;
-    margin: 0;
-    z-index: 999;
+.orange-text{
+	color:#FFA30F;
+}
+
+.frame{
+	width: 50% !important;
+    margin-bottom:5rem;
+    border: 2px solid #fff;
+    border-radius: 25%;
+}
+
+.space-down{
+	margin-bottom:10rem;
+}
+
+.tooltipped{
+	background-color:#232F3E !important; 	
 }
 /* END FOR THE HOME PAGE */
 
@@ -71,6 +89,15 @@ body {font-family: 'Rubik', sans-serif !important;height:100vh;}
 /* END OF STYLE FOR THE LANDING PAGE */
 
 .brand-logo img{
-	width:6rem;
+	width:100%;
 }
+
+
+.frame{
+	width: 100% !important;
+    margin-bottom: 7rem;
+    border: 2px solid #fff;
+    border-radius: 25%;
+}
+
 }
