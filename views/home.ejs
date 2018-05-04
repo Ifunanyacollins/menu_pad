@@ -31,13 +31,13 @@
 
 <main>
 
- <div class="container">
+ <div class="container" id="app" >
  	<div class="row">
  		<div class="col l4 s6 m4">
- 			<a href="#" >
- 			<div class="frame tooltipped  uk-animation-scale-up  uk-inline-clip uk-transition-toggle" data-position="bottom" data-tooltip="FireBrain" tabindex="0">
+ 			<a  >
+ 			<div   class="frame tooltipped  uk-animation-scale-up  uk-inline-clip uk-transition-toggle" data-position="bottom" data-tooltip="FireBrain" tabindex="0" v-on:click="frame">
  				<img src="images/fire.png" alt="firebrain" class="responsive-img">
- 				<img class="uk-transition-slide-up uk-position-cover" src="images/firec.png" alt="">
+ 				<img class="uk-transition-slide-top uk-position-cover" src="images/firec.png" alt="">
  			</div>
  		</a>
  		 
@@ -57,7 +57,7 @@
  			<a href="#">
  			<div class="frame tooltipped uk-animation-scale-up uk-inline-clip uk-transition-toggle" data-position="bottom" data-tooltip="FavReaders"  tabindex="0">
  			<img src="images/read.png" alt="read" class="responsive-img">
- 			<img class="uk-transition-slide-up uk-position-cover" src="images/readc.png" alt="">
+ 			<img class="uk-transition-slide-top uk-position-cover" src="images/readc.png" alt="">
  			</div>
  		   </a>
  		</div>
@@ -78,7 +78,7 @@
    	<a href="#">
  			<div class="frame tooltipped uk-animation-scale-up uk-inline-clip uk-transition-toggle" data-position="bottom" data-tooltip="FavCode54-Time-Table" tabindex="0">
  				<img src="images/timetable.png" alt="timetable	" class="responsive-img">
- 				<img class="uk-transition-slide-up uk-position-cover" src="images/timetablec.png" alt="">
+ 				<img class="uk-transition-slide-top uk-position-cover" src="images/timetablec.png" alt="">
  			</div>
  		</a>
  		</div>
@@ -95,6 +95,11 @@
  		</div>
 
  	</div>
+  <audio id="myAudio" ref="ioa">
+  <source src="audio/fire.ogg" type="audio/ogg">
+  <source src="audio/fire.mp3" type="audio/mpeg">
+  <p class="white">Your browser does not support the audio element.</p>
+</audio>
  </div>	
 
 
@@ -110,6 +115,8 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.42/js/uikit.min.js"></script>
 <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script type="text/javascript" src="materialize/js/app.js"></script>
 <script >
 	  $(document).ready(function(){
     $('.tooltipped').tooltip();
@@ -117,12 +124,10 @@
       
 
 
+  
+
    
-     $('.frame').bind('click',function(){
-     	var answer = confirm("Are you sure you want to do that?"); 
-    		if (answer == true) {   window.open("http://oreilly.com", "namedWindow"); } 
-    		else {   alert("You decided against"); }
-     }) 
+ 
 
 </script>
 </body>
